@@ -1,0 +1,433 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.hero-header{
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+.wrapper{
+    width:1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width:45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color:#fff;
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width:100%;
+    height:3px;
+    transition: 0.3s;
+    transition-property:transform, opacity;
+
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#e5e5e5;
+     margin-right: 2.5rem;
+     .container {
+        display: flex;
+        justify-content: space-between; /* Add more space between the picture and text */
+        align-items: center;
+        padding-top: 4rem;
+        gap: 40px; /* Adjust gap to control the spacing */
+    }
+}
+    .container .hero-pic {
+        width: 400px;
+        height: 400px;
+        border-radius: 10%;
+        overflow: hidden;
+    }
+    
+    .hero-pic img {
+        height: 100%;
+        width: 100%;
+        transition: 0.5s;
+    }
+    
+    .hero-pic img:hover {
+        transform: scale(1.2);
+    }
+    
+    .hero-text {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        text-align: left; /* Align text to the left */
+    }
+    
+    .hero-text h5 {
+        color: #e5e5e5;
+        font-size: 14px;
+        margin-bottom: 10px; /* Adds space between heading and content */
+    }
+    
+    .hero-text h5 span {
+        color: #007ced;
+        font-size: 16px;
+    }
+    
+    .hero-text h1 {
+        color: #007ced;
+        font-size: 3rem;
+        margin-bottom: 20px; /* Adds spacing below the title */
+    }
+    
+    .hero-text p {
+        color: #e5e5e5;
+        margin-bottom: 15px; /* Adds space between paragraphs */
+    }
+    
+    .btn-group {
+        margin: 45px 0;
+    }
+    
+    .btn-group .btn {
+        border-color: #d5d5d5;
+        color: #fff;
+        background-color: #333;
+        padding: 12px 25px;
+        margin: 5px 0px;
+        margin-right: 7px;
+        border-radius: 30px;
+        border: 2px solid #e5e5e5;
+        box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    }
+    
+    .btn.active {
+        border-color: #007ced;
+    }
+    
+    .hero-text .social i {
+        color: #e5e5e5;
+        font-size: 18px;
+        margin-right: 10px;
+        transition: 0.5s;
+    }
+    
+    .hero-text .social i:hover {
+        color: #007ced;
+        transform: rotate(360deg);
+    }
+    
+    .contact-title {
+        color: blue;
+    }
+    
+    .contact-info {
+        color: white;
+    }
+    
+    .contact-info li strong {
+        color: white;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 930px) {
+        nav .togglebtn {
+            display: initial;
+        }
+    
+        .click {
+            top: 45px;
+        }
+    
+        .click span {
+            position: absolute;
+            margin-top: 12px;
+        }
+    
+        .click span:first-child {
+            transform: rotate(-40deg);
+        }
+    
+        .click span:nth-child(2) {
+            opacity: 0;
+            margin: 0;
+        }
+    
+        .click span:last-child {
+            transform: rotate(45deg);
+            top: 0;
+        }
+    
+        nav .navlinks {
+            position: absolute;
+            top: 110px;
+            right: -100%;
+            bottom: 0;
+            width: 60%;
+            height: 100vh;
+            background-color: #222;
+            z-index: 3;
+            box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+            transition: 0.5s;
+            padding: 25px 0px;
+        }
+    
+        nav .navlinks li {
+            display: block;
+        }
+    
+        nav .navlinks li a {
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    
+        nav .navlinks.open {
+            right: 0;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            padding-top: 2rem;
+            gap: 20px; /* Adjust gap for mobile */
+        }
+    
+        .hero-text {
+            padding: 40px 0px;
+            text-align: center; /* Center text for smaller screens */
+        }
+    }
+    
+
+.certificate-section { 
+    text-align: center; /* Center align text within the section */
+    margin: 30px 0; /* Reduce space above and below the section */
+}
+
+.certificate-title {
+    color: blue; /* Change the text color to blue */
+    margin-bottom: 10px; /* Reduce space below the title */
+}
+
+.certificates {
+    display: flex;
+    justify-content: center; /* Center the images */
+    margin-top: -5px; /* Reduce space above the images */
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.certificate-img {
+    width: 100%; /* Make images responsive */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images fill the area proportionately */
+    margin: 10px; /* Space between images */
+    border-radius: 8px; /* Add some rounding to the edges */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .certificate-img {
+        max-width: 300px; /* Smaller width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-img {
+        max-width: 200px; /* Smaller width for mobile devices */
+    }
+}
+
+.work-experience-section {
+    text-align: center; /* Center align text within the section */
+    margin: 80px 0; /* Space above and below the section */
+    color: white;
+}
+
+.work-title {
+    color: blue; /* Change the title color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.work-container {
+    display: flex; /* flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items horizontally */
+    gap: 1rem; /* Space between the images and text */
+    padding: 2rem; /* Add some padding around the grid */
+}
+
+.image-container {
+    display: flex; /*  flexbox for images */
+    justify-content: center; /* Center images horizontally */
+    gap: 4rem; /* Space between images */
+    flex-wrap: wrap; /* Allow images to wrap if necessary */
+}
+
+.work-container img {
+    width: 50%; /* Adjust width for images to fit four in a row */
+    max-width: 500px; /* Optional: limit the width of each image */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+.work-text {
+    margin: rem 0; /* Add some margin around the text */
+    max-width: 800px; /* Optional: limit the width of the text */
+}
+
+.contact-section {
+
+    color: #e5e5e5; /* Text color */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: blue; /* Highlight color */
+}
+
+.contact-section p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #e5e5e5;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007ced; /* Highlight on hover */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #333; /* Dark input background */
+    color: #e5e5e5; /* Input text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form button {
+    background-color: #007ced; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #005bb5; /* Darker on hover */
+}
+
+.cv-button {
+    margin-top: 20px;
+}
+
+.cv-button a {
+    background-color: #e5e5e5; /* CV button color */
+    color: #5e5b5b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cv-button a:hover {
+    background-color: #d1d1d1; /* Darker on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+  .contact-section p {
+    font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    max-width: 90%;
+}
+}

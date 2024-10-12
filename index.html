@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-c"></i>
+                    <div class="logo-text">Christian Dave</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#certificate">Certificate</a></li>
+                        <li><a href="#work-experience">Work Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container" id="about">
+                <div class="hero-pic">
+                    <img src="assets/img/dave.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">BSIT Student</span></h5>
+                    <h1>Christian Dave</h1>
+                    <p>Hi, I'm a dedicated college student pursuing a degree in Information Technology.</p>
+                    <p>With a passion for technology and a keen interest in software development, I'm always eager to learn and grow. My journey in IT has equipped me with skills in programming, web development, and problem-solving. I'm excited to take on new challenges and contribute to innovative projects.</p>
+            
+                    <h3 class="contact-title">Contact Information</h3>
+<ul class="contact-info">
+    <li><strong>Email:</strong> daverafael547@gmail.com</li>
+    <li><strong>Phone:</strong> 09309373447</li>
+    <li><strong>Address:</strong> R.T.R Agusan Del Norte</li>
+    <li><strong>Birthdate:</strong> August 26, 2001</li>
+    <li><strong>Age:</strong> 23</li>
+    <li><strong>Degree:</strong> Bachelor of Science in Information Technology</li>
+</ul>
+            
+                    <div class="btn-group">
+                        <a href="assets/resume/Tabaranza Resume (2).pdf" class="btn active" download>Download Resume</a>
+                    </div>
+                </div>
+            </div>
+
+       <!----continue for Editing -->
+       <section id="certificate" class="certificate-section">
+        <h2 class="certificate-title">CERTIFICATE</h2>
+        <div class="container">
+            <div class="certificates">
+                <img src="assets/img/0eeaa912-84f9-445a-ad5e-79f48f11c2fc.jpg" alt="Certificate 1" class="certificate-img">
+                <img src="assets/img/793674ce-2976-4d3c-ae1a-f27165e3ac2e.jpg" alt="Certificate 2" class="certificate-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="work-experience" class="work-experience-section">
+        <h2 class="work-title">Work Experience</h2>
+        <div class="work-container">
+            <div class="image-container">
+                <img src="assets/img/IMG_20240208_080708 - Copy.jpg" alt="Work Experience 1">
+                <img src="assets/img/IMG20240319093632.jpg" alt="Work Experience 2">
+                <img src="assets/img/IMG_20240222_111123.jpg" alt="Work Experience 3">
+                <img src="assets/img/IMG_20240506_135920.jpg" alt="Work Experience 4">
+            </div>
+            
+            <div class="work-text">
+                <p>My day during my internship at the Butuan City Water District involved a variety of tasks that required me to handle numerous challenges with minimal supervision. Each day, I was responsible for querying and managing customer information, ensuring that all data was accurate and up to date.</p>
+                <p>This involved interacting with customers to gather necessary details and address any inquiries they had regarding their water bills. I learned how to navigate the billing system effectively, which helped me understand the importance of clear communication and attention to detail in customer service.</p>
+                <p>Overall, this internship not only enhanced my technical skills but also improved my ability to work independently and efficiently in a professional environment.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>name@gmail.com</p>
+        <p>+63 939669494</p>
+    
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/mblreegp" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Number" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            alert('Thank you for your message!'); // Display a thank you message
+        });
+    </script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+      <script>
+         /** creating button click show hide navbar **/
+         var togglebtn=document.querySelector(".togglebtn");
+         var nav=document.querySelector(".navlinks");
+         var links=document.querySelector(".navlinks li");
+     
+         togglebtn.addEventListener("click", function(){
+             this.classList.toggle("click");
+             nav.classList.toggle("open");
+         })
+     
+         var typed=new Typed(".input",{
+             strings:["BSIT Student","4th Year","Caraga State University"],
+             typedSpeed:70,
+             backSpeed:55,
+             loop:true
+         })
+      </script>
+</body>
+</html>
